@@ -37,7 +37,6 @@
   <header>
     <h1>TransTudo</h1>
     <p>Entregamos para todos os estados do Brasil com agilidade e segurança</p>
-    <p> (11) 91234-5678</p>
   </header>
 
   <div id="map"></div>
@@ -74,10 +73,11 @@
         fillColor: "#3399ff",
         fillOpacity: 0.8
       }).addTo(map).on('click', () => {
-        window.location.href = estado.html?nome=${encodeURIComponent(e.nome)};
+        window.location.href = `estado.html?nome=${encodeURIComponent(e.nome)}`;
       });
     });
   </script>
 
 </body>
 </html>
+
